@@ -1,5 +1,45 @@
-# Vue 3 + TypeScript + Vite
+# Master Steel - Cart System
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplikasi ini mensimulasikan alur pemilihan produk, cart, hingga proses checkout sederhana.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+🔗 **Live Demo:** [Link Netlify]
+
+## 🛠 Tech Stack
+
+-   **Framework:** Vue 3
+-   **Language:** TypeScript
+-   **State Management:** Pinia
+-   **Styling:** Tailwind CSS 3
+-   **Build Tool:** Vite
+
+## ✨ Fitur Utama
+
+-   **Product Catalog:** Menampilkan daftar produk baja (Besi Beton, Wire Rod, dll) dengan sistem _Lazy Load / Load More_ untuk simulasi data besar.
+-   **Cart Management:**
+    -   Add to Cart.
+    -   Cart Drawer (Side panel).
+    -   Adjust Quantity & Remove Item.
+    -   Real-time calculation (Subtotal & Total Items).
+-   **Data Persistency:** Menggunakan `LocalStorage` agar data keranjang tidak hilang saat page refresh.
+-   **Checkout Simulation:**
+    -   Modal Form dengan validasi input sederhana.
+    -   Simulasi _Asynchronous Process_ (Loading state).
+    -   Feedback visual (Success Message & Order ID generation).
+-   **Responsive Design:** Tampilan adaptif untuk Mobile dan Desktop.
+
+## 📂 Struktur Project
+
+Project ini menerapkan _Separation of Concerns_ untuk menjaga kerapian kode:
+
+```text
+src/
+├── components/      # UI Components (Reusable)
+│   ├── cart/        # Komponen spesifik keranjang (Drawer, Modal)
+│   ├── product/     # Komponen spesifik produk (Card, List)
+│   └── ...
+├── composables/     # Shared Logic / Hooks (e.g., useCurrency)
+├── data/            # Mock Data (Simulasi Database Produk)
+├── stores/          # Global State Management (Pinia Cart Store)
+├── types/           # TypeScript Interfaces & Definitions
+└── views/           # Halaman Utama
+```
