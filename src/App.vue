@@ -32,7 +32,7 @@ const cartStore = useCartStore();
 						<p
 							class="text-[10px] text-gray-500 font-bold tracking-widest uppercase"
 						>
-							Sistem Cart Belanja
+							Cart Simulation System
 						</p>
 					</div>
 				</div>
