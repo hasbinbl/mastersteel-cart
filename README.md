@@ -2,7 +2,7 @@
 
 Aplikasi ini mensimulasikan alur pemilihan produk, cart, hingga proses checkout sederhana.
 
-🔗 **Live Demo:** [Link Netlify]
+🔗 **Live Demo:** [\[Netlify\]](https://cart-hasbinbl.netlify.app/)
 
 ## 🛠 Tech Stack
 
