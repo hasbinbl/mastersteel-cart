@@ -243,8 +243,7 @@ const closeModal = () => {
 					Order Successful!
 				</h3>
 				<p class="text-gray-600 mb-6 leading-relaxed max-w-sm">
-					Thank You. Permintaan penawaran Anda telah dikirim ke sistem
-					sales kami.
+					Thank You. Your order is recieved by our system.
 				</p>
 				<div
 					class="bg-gradient-to-r from-gray-100 to-gray-200 px-5 py-3 rounded-xl border-2 border-gray-300 shadow-sm"
